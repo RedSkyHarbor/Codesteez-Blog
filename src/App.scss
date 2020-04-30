@@ -1,1 +1,7 @@
-/* styling in this file applies to all components unless overwritten in a components css module */
+/* Define global variables here */
+$primary-color: red;
+
+/* Define global styling here */
+a {
+  color: $primary-color;
+}
