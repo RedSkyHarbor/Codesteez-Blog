@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
-import Header from '../components/generics/Header'
+import Header from '../components/header/Header'
 import PostList from '../components/blog/PostList'
-import Footer from '../components/generics/Footer'
+import Footer from '../components/footer/Footer'
 
 class Homepage extends Component {
     render() {

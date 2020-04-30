@@ -2,10 +2,13 @@
 $primary-color: red;
 
 /* Define global styling here */
+[hidden] {
+  display: none;
+}
+
 .content {
   min-height: calc(100vh - 18px); /* Creates a sticky footer, subtract the total size of the footer */
 }
-
 
 a {
   color: $primary-color;
