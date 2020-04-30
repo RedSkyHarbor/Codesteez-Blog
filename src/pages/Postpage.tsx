@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 
-import Post from '../components/blog/Post'
 import Header from '../components/generics/Header'
+import Post from '../components/blog/Post'
+import Footer from '../components/generics/Footer'
 
 class Postpage extends Component<any, any> {
 
@@ -10,6 +11,7 @@ class Postpage extends Component<any, any> {
             <div>
                 <Header />
                 <Post post={this.props.match.params.slug} />
+                <Footer />
             </div>
         )
     }
