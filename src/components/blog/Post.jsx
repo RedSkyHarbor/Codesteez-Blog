@@ -15,7 +15,7 @@ class Post extends Component {
         const post = this.state.data
 
         return (
-            <div>
+            <div className='content'>
                 <Helmet>
                     <title>{post.seo_title}</title>
                     <meta name='description' content={post.meta_description} />
