@@ -6,6 +6,10 @@ $primary-color: red;
   display: none;
 }
 
+.inline {
+  display: inline;
+}
+
 .content {
   min-height: calc(100vh - 18px); /* Creates a sticky footer, subtract the total size of the footer */
 }
