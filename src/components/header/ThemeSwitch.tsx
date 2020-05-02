@@ -1,7 +1,12 @@
 import React, { Component } from 'react'
+import styles from './ThemeSwitch.module.scss'
+
 
 const Checkbox = (props: any) => (
-  <input type='checkbox' {...props} />
+  <>
+    <input type='checkbox'{...props}/>
+    <label></label>
+  </>
 )
 
 class ThemeSwitch extends Component {
@@ -17,7 +22,7 @@ class ThemeSwitch extends Component {
 
   render() {
     return (
-      <div className='inline'>
+      <div className={styles.slider}>
           <Checkbox onChange={this.toggle} />
           <style media={this.isActive() ? 'screen' : 'none'}>
             {`  
