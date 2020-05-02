@@ -4,13 +4,12 @@ header {
 }
 
 ul {
-    display: block;
     margin: 0;
     padding: 4vh 0 0 1vh;
     list-style-type: none;
 }
 
 li {
-    display: inline;
+    float: left;
     margin: 0 30px 0 0;
 }

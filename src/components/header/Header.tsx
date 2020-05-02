@@ -11,8 +11,8 @@ const Header = () => {
                 <ul role='menu'>
                     <li role='menuitem'><Link to='/'>Codesteez</Link></li>
                     <li role='menuitem'><Link to='/'>About</Link></li>
-                    <li role='menuitem'><ThemeSwitch /></li>
                 </ul>
+                <ThemeSwitch />
             </nav>
         </header>
     )
