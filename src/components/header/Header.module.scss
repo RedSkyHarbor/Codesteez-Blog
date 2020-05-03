@@ -1,15 +1,35 @@
 header {
     background-color: orange;
-    height: 10vh;
+    margin: 0 0 1vh 0;
+    height: 7vh;
+}
+
+nav {
+    height: inherit;
 }
 
 ul {
-    margin: 0;
-    padding: 4vh 0 0 1vh;
+    margin-top: 3vh;
+    display: inline-block;
     list-style-type: none;
+    padding-left: 1vh;
 }
 
 li {
     float: left;
-    margin: 0 30px 0 0;
+    margin-right: 5vh;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.middle_align {
+    margin-top: 2%; /* This value needs to change if font-size in .link changes */
 }

@@ -1,8 +1,8 @@
-$checked-color: #1877c1;
+$checked-color: #888;
 $unchecked-color: #888;
 
 .slider {
-    float: right;
+    display: inline-block;
     position: relative;
     input {
         margin: 0px;
@@ -23,7 +23,6 @@ $unchecked-color: #888;
         height: 20px;
         &:checked + label {
             &:before {
-                background-color: $checked-color;
                 content: "☀️";
                 padding-left: 6px;
             }
