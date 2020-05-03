@@ -1,5 +1,7 @@
 /* Define global variables here */
 $primary-color: red;
+$secondary-color: orange;
+$third-color: white;
 
 /* Define global styling here */
 [hidden] {
@@ -16,4 +18,10 @@ $primary-color: red;
 
 a {
   color: $primary-color;
+}
+
+header, footer {
+  background-color: $secondary-color;
+  height: 7vh;
+  color: $third-color;
 }
