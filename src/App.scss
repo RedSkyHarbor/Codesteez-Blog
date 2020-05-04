@@ -22,6 +22,9 @@ a {
 
 header, footer {
   background-color: $secondary-color;
-  height: 7vh;
   color: $third-color;
+}
+
+header {
+  height: 7vh;
 }
