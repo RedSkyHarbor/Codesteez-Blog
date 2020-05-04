@@ -4,27 +4,32 @@ $secondary-color: orange;
 $third-color: white;
 
 /* Define global styling here */
-[hidden] {
-  display: none;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.inline {
-  display: inline;
+[hidden] {
+  display: none;
 }
 
 .content {
   min-height: calc(100vh - 18px); /* Creates a sticky footer, subtract the total size of the footer */
 }
 
-a {
-  color: $primary-color;
-}
-
 header, footer {
   background-color: $secondary-color;
+}
+
+header a {
   color: $third-color;
 }
 
-header {
-  height: 7vh;
+footer {
+  color: $third-color;
+}
+
+footer a {
+  color: $primary-color;
 }

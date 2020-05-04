@@ -1,33 +1,39 @@
 header {
-    margin: 0 0 1vh 0;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-bottom: 1vh;
 }
 
 nav {
-    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 ul {
-    margin-top: 3vh;
-    display: inline-block;
+    display: flex;
     list-style-type: none;
-    padding-left: 1vh;
 }
 
 li {
-    float: left;
-    margin-right: 5vh;
+    padding-left: 15px;
+    font-size: 1.2em;
 }
 
-.link {
+li a {
     text-decoration: none;
-    color: white;
-    font-size: 1.5em;
 }
 
-.link:hover {
+li .nav_link:hover {
     text-decoration: underline;
 }
 
-.middle_align {
-    margin-top: 2%; /* This value needs to change if font-size in .link changes */
+.collapse {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .collapse {
+        display: block;
+    }
 }
