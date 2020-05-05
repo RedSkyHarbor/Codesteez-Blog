@@ -18,6 +18,7 @@ $third-color: white;
   min-height: calc(100vh - 18px); /* Creates a sticky footer, subtract the total size of the footer */
 }
 
+/* start color themes */
 header, footer {
   background-color: $secondary-color;
 }
@@ -33,11 +34,21 @@ footer {
 footer a {
   color: $primary-color;
 }
+/* end color themes */
 
+/* start mobile navigation menu */
 .collapsed {
   display: none;
 }
 
 .expanded {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
+
+.expanded li {
+  padding-bottom: 3px;
+}
+/* end mobile navigation menu */

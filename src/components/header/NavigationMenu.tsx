@@ -39,7 +39,7 @@ class NavigationMenu extends Component<{mobile_collapse?: boolean}, any> {
                         <li role='menuitem'><Link to='/'>Contact</Link></li>
                         <li role='menuitem'><ThemeSwitch /></li>
                     </ul>
-                    <HamburgerIcon onClick={this.toggleCollapse} />
+                    <HamburgerIcon className={styles.hamburger} onClick={this.toggleCollapse} />
                 </div>
             </nav>
         )

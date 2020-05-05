@@ -16,12 +16,10 @@ li .nav_link:hover {
     text-decoration: underline;
 }
 
-.collapsed {
+/* Mobile only css below */
+.hamburger {
+    height: 23px;
     display: none;
-}
-
-.expanded {
-    display: flex;
 }
 
 .mobile {
@@ -35,5 +33,10 @@ li .nav_link:hover {
 
     .desktop {
         display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        cursor: pointer;
     }
 }
