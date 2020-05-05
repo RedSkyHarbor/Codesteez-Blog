@@ -14,6 +14,7 @@ class PostList extends Component {
     }
 
     render() {
+        console.log(this.state.data)
         return (
             <div className='content'>
                 {this.state.data.map((post, key) => {
