@@ -2,38 +2,7 @@ header {
     padding-top: 1vh;
     padding-bottom: 1vh;
     margin-bottom: 1vh;
-}
-
-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-ul {
-    display: flex;
-    list-style-type: none;
-}
-
-li {
-    padding-left: 15px;
-    font-size: 1.2em;
-}
-
-li a {
-    text-decoration: none;
-}
-
-li .nav_link:hover {
-    text-decoration: underline;
-}
-
-.collapse {
-    display: none;
-}
-
-@media screen and (max-width: 1024px) {
-    .collapse {
-        display: block;
-    }
 }
