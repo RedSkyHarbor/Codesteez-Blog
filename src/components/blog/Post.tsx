@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import butter from '../../butter-client'
 import { Helmet } from 'react-helmet'
+import styles from './Post.module.scss'
 
 interface IProps {
     post: string;
@@ -30,8 +31,10 @@ class Post extends Component<IProps, IState> {
                     <meta name='description' content={post.meta_description} />
                     <meta name='og:image' content={post.featured_image} />
                 </Helmet>
-                <h1>{post.title}</h1>
-                <div dangerouslySetInnerHTML={{ __html: post.body }} />
+                <div className={styles.container}>
+                    <h1>{post.title}</h1>
+                    <div dangerouslySetInnerHTML={{ __html: post.body }} />
+                </div>
             </div>
         )
     }
