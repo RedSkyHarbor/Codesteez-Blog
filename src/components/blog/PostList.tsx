@@ -14,10 +14,9 @@ class PostList extends Component {
     }
 
     render() {
-        console.log(this.state.data)
         return (
             <div className='content'>
-                {this.state.data.map((post, key) => {
+                {this.state.data.map((post: any, key) => {
                     return (
                         <div key={key}>
                             <Link to={`/blog/posts/${post.slug}`}>{post.title}</Link>

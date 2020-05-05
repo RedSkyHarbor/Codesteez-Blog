@@ -1,20 +1,20 @@
 import React, { Component } from 'react'
+import { RouteComponentProps } from 'react-router-dom'
 
 import Header from '../components/header/Header'
 import Post from '../components/blog/Post'
 import Footer from '../components/footer/Footer'
 
-class Postpage extends Component<any, any> {
+type TParams = { slug : string };
 
-    render() {
-        return (
-            <div>
-                <Header />
-                <Post post={this.props.match.params.slug} />
-                <Footer />
-            </div>
-        )
-    }
+const Postpage = ({ match }: RouteComponentProps<TParams> ) => {
+    return (
+        <div>
+            <Header />
+            <Post post={match.params.slug} />
+            <Footer />
+        </div>
+    )
 }
 
 export default Postpage

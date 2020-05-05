@@ -2,15 +2,24 @@ import React, { Component } from 'react'
 import butter from '../../butter-client'
 import { Helmet } from 'react-helmet'
 
+interface IProps {
+    post: string;
+}
 
-class Post extends Component {
-    state = {
-        data: {}
+interface IState {
+    data: any;
+}
+
+class Post extends Component<IProps, IState> {
+    state: IState = {
+        data: {},
     }
+
     async componentDidMount() {
         const resp = await butter.post.retrieve(this.props.post)
         this.setState(resp.data)
     }
+
     render() {
         const post = this.state.data
 
