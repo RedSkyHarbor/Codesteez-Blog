@@ -1,0 +1,39 @@
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+ li {
+    padding-left: 15px;
+    font-size: 1.2em;
+}
+
+li a {
+    text-decoration: none;
+}
+
+li .nav_link:hover {
+    text-decoration: underline;
+}
+
+.collapsed {
+    display: none;
+}
+
+.expanded {
+    display: flex;
+}
+
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .mobile {
+        display: flex;
+    }
+
+    .desktop {
+        display: none;
+    }
+}
