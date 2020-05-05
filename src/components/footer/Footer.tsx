@@ -1,5 +1,4 @@
 import React from 'react'
-import { TwitterFollowButton } from 'react-twitter-embed'
 import styles from './Footer.module.scss'
 
 const Footer = () => {
