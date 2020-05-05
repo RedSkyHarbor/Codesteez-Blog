@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Helmet } from 'react-helmet'
 
 import Header from '../components/header/Header'
 import PostList from '../components/blog/PostList'
@@ -8,6 +9,7 @@ class Homepage extends Component {
     render() {
         return (
             <div>
+                <Helmet><title>Blog | Code Steez</title></Helmet>
                 <Header />
                 <PostList />
                 <Footer />

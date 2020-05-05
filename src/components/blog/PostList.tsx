@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import butter from '../../butter-client'
+import styles from './PostList.module.scss'
 
 class PostList extends Component {
     state = {
@@ -14,12 +15,15 @@ class PostList extends Component {
     }
 
     render() {
+        console.log(this.state.data)
         return (
             <div className='content'>
                 {this.state.data.map((post: any, key) => {
                     return (
-                        <div key={key}>
-                            <Link to={`/blog/posts/${post.slug}`}>{post.title}</Link>
+                        <div className={styles.post_container} key={key}>
+                            <Link to={`/blog/posts/${post.slug}`} className={styles.title}>{post.title}</Link>
+                            <p className={styles.summary}>{post.summary}</p>
+                            <p className={styles.published}>Published on {post.published}</p>
                         </div>
                     )
                 })}

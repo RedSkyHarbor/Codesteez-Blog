@@ -16,6 +16,11 @@ $third-color: white;
 
 .content {
   min-height: calc(100vh - 18px); /* Creates a sticky footer, subtract the total size of the footer */
+  margin-left: 1vh;
+}
+
+.content a {
+  color: $primary-color;
 }
 
 /* start color themes */
