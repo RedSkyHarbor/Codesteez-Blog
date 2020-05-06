@@ -4,6 +4,7 @@ $unchecked-color: #888;
 .slider {
     display: inline-block;
     position: relative;
+    margin-top: 2px;
     input {
         margin: 0px;
         margin-top: 1px;
@@ -23,7 +24,7 @@ $unchecked-color: #888;
         height: 20px;
         &:checked + label {
             &:before {
-                content: "☀️";
+                content: "🌙";
                 padding-left: 6px;
             }
             &:after {
@@ -43,7 +44,7 @@ $unchecked-color: #888;
             transition: background-color 0.3s, left 0.3s;
         }
         &:before {
-            content: "🌙";
+            content: "☀️";
             color: #fff;
             box-sizing: border-box;
             font-family: "FontAwesome", sans-serif;
