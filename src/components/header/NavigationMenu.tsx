@@ -27,7 +27,7 @@ class NavigationMenu extends Component<{mobile_collapse?: boolean}, any> {
                     <ul role='menu'>
                         <li role='menuitem'><Link to='/'>Blog</Link></li>
                         <li role='menuitem'><Link to='/'>About</Link></li>
-                        <li role='menuitem'><Link to='/'>Contact</Link></li>
+                        <li role='menuitem'><Link to='/contact'>Contact</Link></li>
                         <li role='menuitem'><ThemeSwitch /></li>
                     </ul>
                 </div>
@@ -36,7 +36,7 @@ class NavigationMenu extends Component<{mobile_collapse?: boolean}, any> {
                     <ul className={this.state.mobile_collapse ? 'collapsed' : 'expanded'} role='menu'>
                         <li role='menuitem'><Link to='/'>Blog</Link></li>
                         <li role='menuitem'><Link to='/'>About</Link></li>
-                        <li role='menuitem'><Link to='/'>Contact</Link></li>
+                        <li role='menuitem'><Link to='/contact'>Contact</Link></li>
                         <li role='menuitem'><ThemeSwitch /></li>
                     </ul>
                     <HamburgerIcon className={styles.hamburger} onClick={this.toggleCollapse} />
