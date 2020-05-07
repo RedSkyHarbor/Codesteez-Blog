@@ -14,3 +14,18 @@
 .published {
     font-size: 0.8em;
 }
+
+.tag {
+    margin-right: 9px;
+    color: white; 
+    background-color: #fab574; /* Matches color of all text on white */
+    font-size: 12px;
+    padding: 4px;
+    -webkit-border-radius: 18px;
+    -moz-border-webkit: 18px;
+    border-radius: 18px;
+}
+
+.tags {
+    display: inline;
+}

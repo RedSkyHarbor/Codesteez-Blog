@@ -15,15 +15,20 @@ class PostList extends Component {
     }
 
     render() {
-        console.log(this.state.data)
         return (
             <div className='content'>
                 {this.state.data.map((post: any, key) => {
+                    let tagslist = [];
+                    for (let i=0;i<post.tags.length;i++){
+                        tagslist.push(post.tags[i].name)
+                    }
                     return (
                         <div className={styles.post_container} key={key}>
                             <Link to={`/blog/posts/${post.slug}`} className={styles.title}>{post.title}</Link>
                             <p className={styles.summary}>{post.summary}</p>
                             <p className={styles.published}>Published on {post.published}</p>
+                            <span className={styles.tags}>Tags: </span>
+                            <div className='inline'>{ tagslist.map((tag, index) => { return(<span className={styles.tag} key={index}>{tag}</span>) }) }</div>
                         </div>
                     )
                 })}
