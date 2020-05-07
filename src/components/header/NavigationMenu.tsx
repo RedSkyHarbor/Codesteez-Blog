@@ -26,7 +26,7 @@ class NavigationMenu extends Component<{mobile_collapse?: boolean}, any> {
                 <div className={styles.desktop}>
                     <ul role='menu'>
                         <li role='menuitem'><Link to='/'>Blog</Link></li>
-                        <li role='menuitem'><Link to='/'>About</Link></li>
+                        <li role='menuitem'><Link to='/about'>About</Link></li>
                         <li role='menuitem'><Link to='/contact'>Contact</Link></li>
                         <li role='menuitem'><ThemeSwitch /></li>
                     </ul>
@@ -35,7 +35,7 @@ class NavigationMenu extends Component<{mobile_collapse?: boolean}, any> {
                 <div className={styles.mobile}>
                     <ul className={this.state.mobile_collapse ? 'collapsed' : 'expanded'} role='menu'>
                         <li role='menuitem'><Link to='/'>Blog</Link></li>
-                        <li role='menuitem'><Link to='/'>About</Link></li>
+                        <li role='menuitem'><Link to='/about'>About</Link></li>
                         <li role='menuitem'><Link to='/contact'>Contact</Link></li>
                         <li role='menuitem'><ThemeSwitch /></li>
                     </ul>
