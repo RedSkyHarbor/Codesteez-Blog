@@ -14,6 +14,10 @@ $third-color: white;
   display: none;
 }
 
+.hidden {
+  display: none;
+}
+
 .content {
   min-height: calc(100vh - 18px); /* Creates a sticky footer, subtract the total size of the footer */
   margin-left: 1vh;
