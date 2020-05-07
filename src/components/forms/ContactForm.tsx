@@ -38,14 +38,12 @@ class ContactForm extends Component<{}, ContactState> {
             <div className='content'>
                 <form className={styles.contact_form} onSubmit={this.sendEmail}>
                     <h2>Get in touch</h2>
-                    <label htmlFor='name'>Name</label>
-                    <input type='text' id='name' name='user_name' />
-                    <label htmlFor='email'>Email</label>
-                    <input type='email' id='email' name='user_email' />
-                    <label htmlFor='message'>Message</label>
-                    <textarea id='message' name='message' />
+                    <input type='text' name='user_name' placeholder=' Name' />
+                    <input type='email' name='user_email' placeholder=' Email'/>
+                    <textarea  name='message' placeholder=' Message'/>
                     <div className={ this.state.captchaPassed ? 'hidden' : '' }>
                         <ReCAPTCHA 
+                            size='compact'
                             ref={this.state.recaptchaRef} 
                             onChange={this.captchaSuccess} 
                             sitekey={(process.env.REACT_APP_RECAPTCHA_SITE_KEY as string)}
