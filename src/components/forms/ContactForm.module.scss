@@ -1,6 +1,7 @@
 .contact_form {
-    margin-top: 2vh;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 65vh; /* vertical centering on whole page - flex items will only center vertically according to the height of their container */
 }

@@ -17,15 +17,15 @@ export default function ContactForm() {
 
     return (
         <div className='content'>
-            <form className="contact-form" onSubmit={sendEmail}>
-                <input type="hidden" name="contact_number" />
-                <label>Name</label>
-                <input type="text" name="user_name" />
-                <label>Email</label>
-                <input type="email" name="user_email" />
-                <label>Message</label>
-                <textarea name="message" />
-                <input type="submit" value="Send" />
+            <form className={styles.contact_form} onSubmit={sendEmail}>
+                <h2>Get in touch</h2>
+                <label htmlFor='name'>Name</label>
+                <input type='text' id='name' name='user_name' />
+                <label htmlFor='email'>Email</label>
+                <input type='email' id='email' name='user_email' />
+                <label htmlFor='message'>Message</label>
+                <textarea id='message' name='message' />
+                <input type='submit' value='Send' />
             </form>
         </div>
     );
