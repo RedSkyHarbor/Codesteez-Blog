@@ -12,14 +12,14 @@
 }
 
 .published {
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 .tag {
     margin-right: 9px;
     color: white; 
     background-color: #fab574; /* Matches color of all text on white */
-    font-size: 12px;
+    font-size: 0.65em;
     padding: 4px;
     -webkit-border-radius: 18px;
     -moz-border-webkit: 18px;
@@ -27,5 +27,6 @@
 }
 
 .tags {
+    font-size: 0.9em;
     display: inline;
 }

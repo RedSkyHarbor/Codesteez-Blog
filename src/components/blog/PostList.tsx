@@ -9,6 +9,12 @@ class PostList extends Component {
         data: []  // Contains Array of posts
     }
 
+    dateFormat = (date: string) => {
+        let ymd: Array<string> = date.substring(0,10).split('-')
+        let dateobj: Date = new Date(Number(ymd[0]), Number(ymd[1]), Number(ymd[2]))
+        return `${dateobj.toLocaleString('default', { month: 'long' })} ${dateobj.getDate()}, ${dateobj.getFullYear()} `
+    }
+
     async componentDidMount() {    
         const resp = await butter.post.list({ page: 1, page_size: 10 })
         this.setState(resp.data)
@@ -26,7 +32,7 @@ class PostList extends Component {
                         <div className={styles.post_container} key={key}>
                             <Link to={`/blog/posts/${post.slug}`} className={styles.title}>{post.title}</Link>
                             <p className={styles.summary}>{post.summary}</p>
-                            <p className={styles.published}>Published on {post.published}</p>
+                            <p className={styles.published}>Published on {this.dateFormat(post.published)}</p>
                             <span className={styles.tags}>Tags: </span>
                             <div className='inline'>{ tagslist.map((tag, index) => { return(<span className={styles.tag} key={index}>{tag}</span>) }) }</div>
                         </div>
