@@ -1,3 +1,9 @@
+
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: local('PlayfairDisplay'), url(../../fonts/Playfair_Display/PlayfairDisplay.ttf) format('truetype');
+}
+
 .contact_form {
     display: flex;
     flex-direction: column;
@@ -6,6 +12,7 @@
 }
 
 .contact_form h2 {
+    font-family: PlayfairDisplay;
     margin-bottom: 25px;
 }
 
@@ -13,7 +20,17 @@
     height: 25px;
 }
 
+.contact_form textarea {
+    font-size: 0.7em;
+}
+
+
+.contact_form input {
+    font-family: PlayfairDisplay;
+}
+
 .contact_form input, .contact_form textarea {
+    font-family: PlayfairDisplay;
     border: 1px solid #d3d3d3;
     width: 158px;
     background: #f9f9f9;
