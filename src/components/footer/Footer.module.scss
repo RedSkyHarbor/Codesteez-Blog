@@ -1,6 +1,13 @@
+
+@font-face {
+    font-family: 'RalewayRegular';
+    src: local('RalewayRegular'), url(../../fonts/Raleway/RalewayRegular.ttf) format('truetype');
+}
+
 .footer {
+    font-family: RalewayRegular;
     text-align: center;
-    font-size: 0.9em;
+    font-size: 0.95em;
     padding-top: 1vh;
     padding-bottom: 1vh;
 }
