@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import './App.scss';
+import './fonts/Playfair_Display/PlayfairDisplay.ttf'
 
 import Homepage from './pages/Homepage'
 import Postpage from './pages/Postpage'

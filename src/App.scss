@@ -3,8 +3,15 @@ $primary-color: red;
 $secondary-color: orange;
 $third-color: white;
 
+/* Define fonts/typefaces */
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: local('PlayfairDisplay'), url(./fonts/Playfair_Display/PlayfairDisplay.ttf) format('truetype');
+}
+
 /* Define global styling here */
 * {
+  font-family: PlayfairDisplay;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -15,7 +22,12 @@ $third-color: white;
   text-decoration: underline;
 }
 
+/* easily hide elements by changing className */
 [hidden] {
+  display: none;
+}
+
+.hidden {
   display: none;
 }
 
@@ -23,20 +35,19 @@ $third-color: white;
   display: inline;
 }
 
-.hidden {
-  display: none;
-}
 
+
+/* Creates a sticky footer, subtract the total size of the footer */
 .content {
-  min-height: calc(100vh - 18px); /* Creates a sticky footer, subtract the total size of the footer */
+  min-height: calc(100vh - 18px); 
   margin-left: 1vh;
 }
 
+/* start color themes */
 .content a {
   color: $primary-color;
 }
 
-/* start color themes */
 header, footer {
   background-color: $secondary-color;
 }
