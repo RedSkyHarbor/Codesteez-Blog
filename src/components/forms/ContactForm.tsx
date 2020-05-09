@@ -5,17 +5,17 @@ import styles from './ContactForm.module.scss'
 
 type ContactState = {
     captchaPassed?: boolean,
-    recaptchaRef?: React.RefObject<ReCAPTCHA>
+    recaptchaRef?: React.RefObject<ReCAPTCHA>,
+    emailSent?: boolean,
 }
 
-class ContactForm extends Component<{}, ContactState> {
-    constructor(props: any) {
-        super(props)
+type ContactProps = {}
 
-        this.state = {
-            captchaPassed: false,
-            recaptchaRef:  React.createRef<ReCAPTCHA>(),
-        }
+class ContactForm extends Component<ContactProps, ContactState> {
+    state = {
+        captchaPassed: false,
+        recaptchaRef:  React.createRef<ReCAPTCHA>(),
+        emailSent: false,
     }
 
     sendEmail = (e: any) => {
@@ -23,6 +23,7 @@ class ContactForm extends Component<{}, ContactState> {
 
         emailjs.sendForm((process.env.REACT_APP_EMAILJS_SERVICE_ID as string), (process.env.REACT_APP_EMAILJS_TEMPLATE_ID as string), e.target, (process.env.REACT_APP_EMAILJS_USER_ID as string))
             .then((result) => {
+                this.setState({ emailSent: true })
                 console.log(result.text);
             }, (error) => {
                 console.log(error.text);
@@ -50,6 +51,9 @@ class ContactForm extends Component<{}, ContactState> {
                         />
                     </div>
                     <input className={ this.state.captchaPassed ? '' : 'hidden' }  type='submit' value='Send' />
+                    <div className={ this.state.emailSent ? '' : 'hidden'}>
+                        Email sent. Expect a reply within the next 5 business days.
+                    </div>
                 </form>
             </div>
         );
