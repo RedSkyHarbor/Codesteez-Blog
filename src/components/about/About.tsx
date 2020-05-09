@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './About.module.scss'
 
 // @ts-ignore
-import { TwitterFollowButton } from 'react-twitter-embed'
+import { TwitterFollowButton, TwitterTimelineEmbed } from 'react-twitter-embed'
 
 const About = () => {
     return (
@@ -14,6 +14,12 @@ const About = () => {
             </div>
             <div className={styles.social_container}>
                 <TwitterFollowButton screenName={'codingsteez'} />
+                <TwitterTimelineEmbed
+                    sourceType="profile"
+                    screenName="codingsteez"
+                    options={{height: 400}}
+                    placeholder={<div />}
+                />
             </div>
         </div>
     )
