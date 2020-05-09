@@ -10,6 +10,11 @@ $third-color: white;
   padding: 0;
 }
 
+/* Styling to NavLink https://reacttraining.com/react-router/web/api/NavLink */
+.active {
+  text-decoration: underline;
+}
+
 [hidden] {
   display: none;
 }
