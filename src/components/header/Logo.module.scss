@@ -1,6 +1,15 @@
+
+@font-face {
+    font-family: 'PlayfairDisplayItalic';
+    src: local('PlayfairDisplayItalic'), url(../../fonts/Playfair_Display/PlayfairDisplayItalic.ttf) format('truetype');
+  }
+  
+
 .logo {
-    color: white;
+    font-family: PlayfairDisplayItalic;
+    font-weight: 800;
     font-size: 1.5em;
+    color: white;
     padding-left: 1vh;
 }
 

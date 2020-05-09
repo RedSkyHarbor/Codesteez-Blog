@@ -3,15 +3,8 @@ $primary-color: red;
 $secondary-color: orange;
 $third-color: white;
 
-/* Define fonts/typefaces */
-@font-face {
-  font-family: 'PlayfairDisplay';
-  src: local('PlayfairDisplay'), url(./fonts/Playfair_Display/PlayfairDisplay.ttf) format('truetype');
-}
-
 /* Define global styling here */
 * {
-  font-family: PlayfairDisplay;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -34,8 +27,6 @@ $third-color: white;
 .inline {
   display: inline;
 }
-
-
 
 /* Creates a sticky footer, subtract the total size of the footer */
 .content {

@@ -1,58 +1,87 @@
-/* https://github.com/twbs/bootstrap/blob/master/dist/css/bootstrap.css */ 
-.container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 5vh;
-  }
-  @media (min-width: 768px) {
-    .container {
-      width: 750px;
-    }
-  }
-  @media (min-width: 992px) {
-    .container {
-      width: 970px;
-    }
-  }
-  @media (min-width: 1200px) {
-    .container {
-      width: 1170px;
-    }
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: local('PlayfairDisplay'), url(../../fonts/Playfair_Display/PlayfairDisplay.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'RalewayRegular';
+  src: local('RalewayRegular'), url(../../fonts/Raleway/RalewayRegular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'MesloRegular';
+  src: local('MesloRegular'), url(../../fonts/MesloLGS/MesloRegular.ttf) format('truetype');
+}
+
+/* Define fonts */
+.container h1, .container h2, .container h3, .container h4 {
+  font-family: PlayfairDisplay;
+}
+
+.container p, .container span {
+  font-family: RalewayRegular;
 }
 
 /* Styling for code blocks */
 .container pre {
-    background: #f4f4f4;
-    border: 1px solid #ddd;
-    border-left: 3px solid #007bff;
-    color: #666;
-    page-break-inside: avoid;
-    font-family: monospace;
-    font-size: 15px;
-    line-height: 1.6;
-    margin-bottom: 1.6em;
-    max-width: 100%;
-    overflow: auto;
-    padding: 1em 1.5em;
-    display: block;
-    word-wrap: break-word;
+  font-family: MesloRegular;
+  font-size: 0.85em;
+  line-height: 1.4;
+  color: #666;
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-left: 3px solid #007bff;
+  page-break-inside: avoid;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
 }
 
 /* Styling for spacing and sizing */
 
 .container h1, .container h2 {
     text-align: center;
-    margin-bottom: 3vh;
-    margin-top: 3vh;
+    margin-bottom: 10px;
 }
 
-.container p {
-    margin-bottom: 2vh;
+.container h3 {
+  margin-bottom: 10px;
+}
+
+.container p, .container span {
+  margin-bottom: 10px;
 }
 
 /* Just to be safe dont let images overflow container*/
 .container img {
-    max-width: 100%;
+    max-width: 80%;
+    margin-bottom: 10px;
+}
+
+/* Bootstrap containers */
+/* https://github.com/twbs/bootstrap/blob/master/dist/css/bootstrap.css */ 
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 5vh;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
 }
