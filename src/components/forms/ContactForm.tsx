@@ -38,9 +38,9 @@ class ContactForm extends Component<{}, ContactState> {
             <div className='content'>
                 <form className={styles.contact_form} onSubmit={this.sendEmail}>
                     <h2>Get in touch</h2>
-                    <input type='text' name='user_name' placeholder=' Name' />
-                    <input type='email' name='user_email' placeholder=' Email'/>
-                    <textarea  name='message' placeholder=' Message'/>
+                    <input type='text' name='user_name' placeholder=' Name' required />
+                    <input type='email' name='user_email' placeholder=' Email' required />
+                    <textarea  name='message' placeholder=' Message' required />
                     <div className={ this.state.captchaPassed ? 'hidden' : '' }>
                         <ReCAPTCHA 
                             size='compact'
