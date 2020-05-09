@@ -8,9 +8,9 @@ const About = () => {
     return (
         <div className='content'>
             <div className={styles.about_container}>
-                <h3>Code steez is maintained by Jesse B.</h3>
-                <h3>Each post is written by Jesse B.</h3>
-                <h3>Give Jesse B a follow if you could ever be so kind.</h3>
+                <p>Code steez is maintained by Jesse B.</p>
+                <p>Each post is written by Jesse B.</p>
+                <p>Give Jesse B a follow if you could ever be so kind.</p>
             </div>
             <div className={styles.social_container}>
                 <TwitterFollowButton screenName={'codingsteez'} />
