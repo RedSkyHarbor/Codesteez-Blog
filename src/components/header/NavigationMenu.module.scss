@@ -1,5 +1,13 @@
+
+@font-face {
+    font-family: 'RalewayRegular';
+    src: local('RalewayRegular'), url(../../fonts/Raleway/RalewayRegular.ttf) format('truetype');
+}
+  
+
 ul {
-    margin-top: 2px; /* to align with CODE STEEZ logo */
+    font-family: RalewayRegular;
+    margin-top: 5px; /* to align with CODE STEEZ logo */
     display: flex;
     list-style-type: none;
 }
