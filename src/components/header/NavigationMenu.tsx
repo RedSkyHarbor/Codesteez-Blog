@@ -27,6 +27,7 @@ class NavigationMenu extends Component<{mobile_collapse?: boolean}, any> {
                         <li role='menuitem'><Link to='/'>Blog</Link></li>
                         <li role='menuitem'><Link to='/about'>About</Link></li>
                         <li role='menuitem'><Link to='/contact'>Contact</Link></li>
+                        <li></li>
                     </ul>
                 </div>
 
