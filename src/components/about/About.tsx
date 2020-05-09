@@ -3,6 +3,7 @@ import styles from './About.module.scss'
 
 // @ts-ignore
 import { TwitterFollowButton, TwitterTimelineEmbed } from 'react-twitter-embed'
+import  ReactLoading from 'react-loading'
 
 const About = () => {
     return (
@@ -13,12 +14,15 @@ const About = () => {
                 <p>Give Jesse B a follow if you could ever be so kind.</p>
             </div>
             <div className={styles.social_container}>
-                <TwitterFollowButton screenName={'codingsteez'} />
+                <TwitterFollowButton 
+                    screenName={'codingsteez'}
+                    placeholder={<ReactLoading type='bars' color='orange'/>}
+                />
                 <TwitterTimelineEmbed
                     sourceType="profile"
                     screenName="codingsteez"
                     options={{height: 400}}
-                    placeholder={<div />}
+                    placeholder={<ReactLoading type='bars' color='orange' />}
                 />
             </div>
         </div>
