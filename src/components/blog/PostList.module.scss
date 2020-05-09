@@ -1,25 +1,42 @@
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: local('PlayfairDisplay'), url(../../fonts/Playfair_Display/PlayfairDisplay.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'RalewayRegular';
+    src: local('RalewayRegular'), url(../../fonts/Raleway/RalewayRegular.ttf) format('truetype');
+  }
+
 .post_container {
     margin-bottom: 3vh;
 }
 
 .title {
-    font-size: 1.1em;
+    font-family: PlayfairDisplay;
+    font-size: 2em;
+    margin-bottom: 5px;
 }
 
 .summary {
+    font-family: RalewayRegular;
     color: black;
     font-size: 0.9em;
+    margin-bottom: 5px;
 }
 
 .published {
+    font-family: RalewayRegular;
     font-size: 0.9em;
+    margin-bottom: 5px;
 }
 
 .tag {
+    font-family: RalewayRegular;
     margin-right: 9px;
     color: white; 
     background-color: #fab574; /* Matches color of all text on white */
-    font-size: 0.65em;
+    font-size: 0.8em;
     padding: 4px;
     -webkit-border-radius: 18px;
     -moz-border-webkit: 18px;
@@ -27,6 +44,7 @@
 }
 
 .tags {
+    font-family: RalewayRegular;
     font-size: 0.9em;
     display: inline;
 }
