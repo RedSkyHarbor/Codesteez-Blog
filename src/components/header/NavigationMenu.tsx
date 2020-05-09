@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import styles from './NavigationMenu.module.scss'
 
-import ThemeSwitch from './ThemeSwitch'
 import { ReactComponent as HamburgerIcon} from './hamburger_icon.svg'
 
 
@@ -28,7 +27,6 @@ class NavigationMenu extends Component<{mobile_collapse?: boolean}, any> {
                         <li role='menuitem'><Link to='/'>Blog</Link></li>
                         <li role='menuitem'><Link to='/about'>About</Link></li>
                         <li role='menuitem'><Link to='/contact'>Contact</Link></li>
-                        <li role='menuitem'><ThemeSwitch /></li>
                     </ul>
                 </div>
 
@@ -37,7 +35,6 @@ class NavigationMenu extends Component<{mobile_collapse?: boolean}, any> {
                         <li role='menuitem'><Link to='/'>Blog</Link></li>
                         <li role='menuitem'><Link to='/about'>About</Link></li>
                         <li role='menuitem'><Link to='/contact'>Contact</Link></li>
-                        <li role='menuitem'><ThemeSwitch /></li>
                     </ul>
                     <HamburgerIcon className={styles.hamburger} onClick={this.toggleCollapse} />
                 </div>

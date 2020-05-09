@@ -9,11 +9,17 @@ const Checkbox = (props: any) => (
   </>
 )
 
-class ThemeSwitch extends Component {
+interface Props {}
+
+interface State {
+  checked: boolean;
+}
+
+class ThemeSwitch extends Component<Props, State> {
   state = { 
     checked: false,
   }
-
+  
   isActive = () => this.state.checked
 
   toggle = (event: any) => {
