@@ -29,7 +29,7 @@ class PostList extends Component {
                         tagslist.push(post.tags[i].name)
                     }
                     return (
-                        <div className={styles.post_container} key={key}>
+                        <div className={styles.container} key={key}>
                             <Link to={`/blog/posts/${post.slug}`} className={styles.title}>{post.title}</Link>
                             <p className={styles.summary}>{post.summary}</p>
                             <p className={styles.published}>Published on {this.dateFormat(post.published)}</p>

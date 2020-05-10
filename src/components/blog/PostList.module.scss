@@ -8,10 +8,6 @@
     src: local('RalewayRegular'), url(../../fonts/Raleway/RalewayRegular.ttf) format('truetype');
   }
 
-.post_container {
-    margin-bottom: 3vh;
-}
-
 .title {
     font-family: PlayfairDisplay;
     font-size: 2em;
@@ -48,3 +44,28 @@
     font-size: 0.9em;
     display: inline;
 }
+
+/* Bootstrap containers */
+/* https://github.com/twbs/bootstrap/blob/master/dist/css/bootstrap.css */ 
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5vh;
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
