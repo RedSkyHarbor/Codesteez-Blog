@@ -1,11 +1,14 @@
 import React from 'react'
 import styles from './Footer.module.scss'
 
+import Logo from '../logo/Logo'
+
 const Footer = () => {
     return (
         <footer className={styles.footer}>
             <div>
-                <span>Created and maintained by Jesse Breuer.</span> <span>Source code released under the MIT license.</span> <span>Website and documentation licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</span>
+                <Logo />
+                <p>Code Steez - A high quality, in depth programming blog.</p>
             </div>
         </footer>
     )
