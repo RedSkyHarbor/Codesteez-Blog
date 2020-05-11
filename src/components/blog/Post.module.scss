@@ -14,6 +14,9 @@
 }
 
 .container {
+
+  min-height: calc(100vh - 3vh); /* Creates a sticky footer, subtract margin buttom from header */
+
   /* Fonts and spacing for headers */
   h1, h2, h3, h4 {
     font-family: PlayfairDisplay;

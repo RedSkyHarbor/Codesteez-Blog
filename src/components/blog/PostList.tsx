@@ -22,33 +22,31 @@ class PostList extends Component {
 
     render() {
         return (
-            <div className='content'>
-                <div className={styles.container}>
-                    {this.state.data.map((post: any, key) => {
-                        let tagslist = [];
-                        for (let i = 0; i < post.tags.length; i++) {
-                            tagslist.push(post.tags[i].name)
-                        }
-                        return (
-                            <div className={styles.post} key={key}>
-                                <p className={styles.published}>Published on {this.dateFormat(post.published)}</p>
-                                <Link to={`/blog/posts/${post.slug}`} className={styles.title}>{post.title}</Link>
-                                <p className={styles.summary}>{post.summary}</p>
-                                <Link to={`/blog/posts/${post.slug}`} className={styles.read_more}>Read more...</Link>
-                                <div className={styles.tag_list}>
-                                    <span>Tags: </span>
-                                    {
-                                        tagslist.map((tag, index) => {
-                                            return (
-                                                <span className={styles.tag} key={index}>{tag}</span>
-                                            )
-                                        })
-                                    }
-                                </div>
+            <div className={styles.container}>
+                {this.state.data.map((post: any, key) => {
+                    let tagslist = [];
+                    for (let i = 0; i < post.tags.length; i++) {
+                        tagslist.push(post.tags[i].name)
+                    }
+                    return (
+                        <div className={styles.post} key={key}>
+                            <p className={styles.published}>Published on {this.dateFormat(post.published)}</p>
+                            <Link to={`/blog/posts/${post.slug}`} className={styles.title}>{post.title}</Link>
+                            <p className={styles.summary}>{post.summary}</p>
+                            <Link to={`/blog/posts/${post.slug}`} className={styles.read_more}>Read more...</Link>
+                            <div className={styles.tag_list}>
+                                <span>Tags: </span>
+                                {
+                                    tagslist.map((tag, index) => {
+                                        return (
+                                            <span className={styles.tag} key={index}>{tag}</span>
+                                        )
+                                    })
+                                }
                             </div>
-                        )
-                    })}
-                </div>
+                        </div>
+                    )
+                })}
             </div>
         )
     }

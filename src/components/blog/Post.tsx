@@ -30,7 +30,7 @@ class Post extends Component<IProps, IState> {
     render() {
         const post = this.state.data
         return (
-            <div className='content'>
+            <div>
                 <Helmet>
                     <title>{post.seo_title}</title>
                     <meta name='description' content={post.meta_description} />
