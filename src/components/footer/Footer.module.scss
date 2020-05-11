@@ -5,10 +5,21 @@
 }
 
 .footer {
-    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: RalewayRegular;
-    text-align: center;
     font-size: 1em;
     padding-top: 1vh;
     padding-bottom: 1vh;
+}
+
+.social_links {
+    display: flex;
+    flex-direction: row;
+    fill: white;
+
+    .github_logo, .twitter_logo {
+        margin: 5px;
+    }
 }
