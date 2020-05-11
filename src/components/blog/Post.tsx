@@ -16,6 +16,12 @@ class Post extends Component<IProps, IState> {
         data: {},
     }
 
+    dateFormat = (date: string) => {
+        let ymd: Array<string> = date.substring(0,10).split('-')
+        let dateobj: Date = new Date(Number(ymd[0]), Number(ymd[1]), Number(ymd[2]))
+        return `${dateobj.toLocaleString('default', { month: 'long' })} ${dateobj.getDate()}, ${dateobj.getFullYear()} `
+    }
+
     async componentDidMount() {
         const resp = await butter.post.retrieve(this.props.post)
         this.setState(resp.data)
@@ -23,6 +29,7 @@ class Post extends Component<IProps, IState> {
 
     render() {
         const post = this.state.data
+        console.log(post)
 
         return (
             <div className='content'>
@@ -32,6 +39,7 @@ class Post extends Component<IProps, IState> {
                     <meta name='og:image' content={post.featured_image} />
                 </Helmet>
                 <div className={styles.container}>
+                    <p>Published on {this.dateFormat(String(post.published))}</p>
                     <h1>{post.title}</h1>
                     <div dangerouslySetInnerHTML={{ __html: post.body }} />
                 </div>
