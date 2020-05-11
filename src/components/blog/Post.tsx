@@ -29,8 +29,6 @@ class Post extends Component<IProps, IState> {
 
     render() {
         const post = this.state.data
-        console.log(post)
-
         return (
             <div className='content'>
                 <Helmet>
@@ -39,7 +37,7 @@ class Post extends Component<IProps, IState> {
                     <meta name='og:image' content={post.featured_image} />
                 </Helmet>
                 <div className={styles.container}>
-                    <p>Published on {this.dateFormat(String(post.published))}</p>
+                    <p className={styles.published}>Published on {this.dateFormat(String(post.published))}</p>
                     <h1>{post.title}</h1>
                     <div dangerouslySetInnerHTML={{ __html: post.body }} />
                 </div>

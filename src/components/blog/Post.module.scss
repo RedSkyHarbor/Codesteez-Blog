@@ -28,6 +28,7 @@
   p, span {
     font-family: RalewayRegular;
     margin-bottom: 20px;
+    line-height: 1.6;
   }
 
   /* Styling for code blocks */
@@ -52,6 +53,11 @@
   img {
     max-width: 80%;
     margin-bottom: 20px;
+  }
+
+  .published {
+    margin-bottom: 5px;
+    margin-top: 35px;
   }
 }
 
