@@ -10,12 +10,12 @@ class PostList extends Component {
     }
 
     dateFormat = (date: string) => {
-        let ymd: Array<string> = date.substring(0,10).split('-')
+        let ymd: Array<string> = date.substring(0, 10).split('-')
         let dateobj: Date = new Date(Number(ymd[0]), Number(ymd[1]), Number(ymd[2]))
         return `${dateobj.toLocaleString('default', { month: 'long' })} ${dateobj.getDate()}, ${dateobj.getFullYear()} `
     }
 
-    async componentDidMount() {    
+    async componentDidMount() {
         const resp = await butter.post.list({ page: 1, page_size: 10 })
         this.setState(resp.data)
     }
@@ -26,7 +26,7 @@ class PostList extends Component {
                 <div className={styles.container}>
                     {this.state.data.map((post: any, key) => {
                         let tagslist = [];
-                        for (let i=0;i<post.tags.length;i++){
+                        for (let i = 0; i < post.tags.length; i++) {
                             tagslist.push(post.tags[i].name)
                         }
                         return (
@@ -34,16 +34,21 @@ class PostList extends Component {
                                 <p className={styles.published}>Published on {this.dateFormat(post.published)}</p>
                                 <Link to={`/blog/posts/${post.slug}`} className={styles.title}>{post.title}</Link>
                                 <p className={styles.summary}>{post.summary}</p>
-                                <span className={styles.tags}>Tags: </span>
-                                <div className='inline'>{ 
-                                    tagslist.map((tag, index) => { return (
-                                        <span className={styles.tag} key={index}>{tag}</span>
-                                    )}) 
-                                }</div>
+                                <Link to={`/blog/posts/${post.slug}`} className={styles.read_more}>Read more...</Link>
+                                <div className={styles.tag_list}>
+                                    <span>Tags: </span>
+                                    {
+                                        tagslist.map((tag, index) => {
+                                            return (
+                                                <span className={styles.tag} key={index}>{tag}</span>
+                                            )
+                                        })
+                                    }
+                                </div>
                             </div>
                         )
                     })}
-                </div>      
+                </div>
             </div>
         )
     }
