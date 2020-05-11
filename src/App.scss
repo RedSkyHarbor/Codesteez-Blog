@@ -10,7 +10,7 @@ $third-color: white;
   padding: 0;
 }
 
-/* Styling to NavLink https://reacttraining.com/react-router/web/api/NavLink */
+/* Underlines currently active NavLink */
 .active {
   text-decoration: underline;
 }
@@ -35,10 +35,6 @@ $third-color: white;
 }
 
 /* start color themes */
-.content a {
-  color: $primary-color;
-}
-
 header, footer {
   background-color: $secondary-color;
 }
