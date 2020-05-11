@@ -7,7 +7,6 @@ import  ReactLoading from 'react-loading'
 
 const About = () => {
     return (
-        <div className='content'>
             <div className={styles.about_container}>
                 <p>Code steez is maintained by Jesse B.</p>
                 <p>Each post is written by Jesse B.</p>
@@ -23,7 +22,6 @@ const About = () => {
                     placeholder={<ReactLoading type='bars' color='orange' />}
                 />
             </div>
-        </div>
     )
 }
 
