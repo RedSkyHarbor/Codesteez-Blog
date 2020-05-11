@@ -10,27 +10,47 @@
 
 .post {
   
-  padding-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 25px;
+  margin-bottom: 35px;
   border-bottom: 1px solid black;
-  margin-bottom: 45px;
 
   .title {
     font-family: PlayfairDisplay;
     font-size: 2em;
+    text-decoration: none;
+    color: orange;
   }
 
-  .summary, .published, .tag, .tags {
+  .summary, .published, .tag_list, .tag, .read_more {
     font-family: RalewayRegular;
-    font-size: 1em;
     line-height: 1.6;
   }
 
-  .tags {
-    display: inline;
+  .summary {
+    font-size: 1em;
+  }
+
+  .published {
+    font-size: 0.8em;
+  }
+
+  .read_more {
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: orange;
+  }
+
+  .tag_list, .tag {
+    font-size: 0.9em;
+    color: grey;
   }
 
   .tag {
-    margin-right: 5px;
+    margin-right: 7px;
+    text-decoration: underline;
   }
 
 }
