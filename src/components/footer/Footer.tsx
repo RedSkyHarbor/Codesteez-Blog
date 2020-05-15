@@ -14,8 +14,8 @@ const Footer = () => {
             <Logo />
             <p>Code Steez - A high quality, in depth programming blog.</p>
             <div className={styles.social_links}>
-                <a rel="noopener noreferrer" target="_blank" href='https://twitter.com/CodingSteez'><GithubLogo className={styles.github_logo} /></a>
-                <a rel="noopener noreferrer" target="_blank" href='https://github.com/RedSkyHarbor'><TwitterLogo className={styles.twitter_logo} /></a>
+                <a rel="noopener noreferrer" target="_blank" href='https://github.com/RedSkyHarbor'><GithubLogo className={styles.github_logo} /></a>
+                <a rel="noopener noreferrer" target="_blank" href='https://twitter.com/CodingSteez'><TwitterLogo className={styles.twitter_logo} /></a>
             </div>
         </footer>
     )
