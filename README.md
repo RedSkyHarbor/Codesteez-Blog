@@ -1,5 +1,6 @@
 # CodeSteez
-My personal blog! Here I write short articles about my projects, things that interest me, and everything else related to computing.
+My personal blog! Here I write short articles about my projects, things that interest me, and everything else related to computing. 
+[Visit my site](https://www.codesteez.com/)
 
 ## Built with
 [React](https://reactjs.org/) - A declarative, component based UI framework thats super efficient with its use of virtual dom.
@@ -11,6 +12,7 @@ My personal blog! Here I write short articles about my projects, things that int
 [EmailJS](https://www.emailjs.com/) - A Javascript library that connects to email services so users can send me personalized messages.
 
 [ReCaptcha](https://www.google.com/recaptcha/intro/v3.html) - Filters out bots from sending me spam emails.
+
 [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) - Highly compatible CSS properties.
 
 [SASS](https://sass-lang.com/) - A CSS preprocessor that makes styling my site more organized.
