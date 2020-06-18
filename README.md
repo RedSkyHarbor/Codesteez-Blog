@@ -3,12 +3,18 @@ My personal blog! Here I write short articles about my projects, things that int
 
 ## Built with
 [React](https://reactjs.org/) - A declarative, component based UI framework thats super efficient with its use of virtual dom.
+
 [Typescript](https://www.typescriptlang.org/) - A superset of Javascript that forces static typing.
+
 [ButterCMS](https://buttercms.com/) - Headless content management system that I use to write and store my blog posts.
+
 [EmailJS](https://www.emailjs.com/) - A Javascript library that connects to email services so users can send me personalized messages.
-[ReCaptcha](https://www.google.com/recaptcha/intro/v3.html) - Filters out bots from sending me spam emails .
+
+[ReCaptcha](https://www.google.com/recaptcha/intro/v3.html) - Filters out bots from sending me spam emails.
 [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) - Highly compatible CSS properties.
+
 [SASS](https://sass-lang.com/) - A CSS preprocessor that makes styling my site more organized.
+
 [Heroku](https://www.heroku.com/) - A cloud platform that I use to host my site.
 
 ## Goals
@@ -16,7 +22,9 @@ I wanted to build a professional website while only having to focus on writing a
 
 ## TODOs
 Light theme / Dark theme toggle so my viewers don't burn their eyes at night
-    Theme should be persisted in local storage
+
+Theme should be persisted in local storage
+
 404 Page
 
 ## License
