@@ -1,44 +1,23 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# CodeSteez
+My personal blog! Here I write short articles about my projects, things that interest me, and everything else related to computing.
 
-## Available Scripts
+## Built with
+[React](https://reactjs.org/) - A declarative, component based UI framework thats super efficient with its use of virtual dom.
+[Typescript](https://www.typescriptlang.org/) - A superset of Javascript that forces static typing.
+[ButterCMS](https://buttercms.com/) - Headless content management system that I use to write and store my blog posts.
+[EmailJS](https://www.emailjs.com/) - A Javascript library that connects to email services so users can send me personalized messages.
+[ReCaptcha](https://www.google.com/recaptcha/intro/v3.html) - Filters out bots from sending me spam emails .
+[Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) - Highly compatible CSS properties.
+[SASS](https://sass-lang.com/) - A CSS preprocessor that makes styling my site more organized.
+[Heroku](https://www.heroku.com/) - A cloud platform that I use to host my site.
 
-In the project directory, you can run:
+## Goals
+I wanted to build a professional website while only having to focus on writing a front-end codebase. As a result, I opted to use ButterCMS so I wouldn't have to manage any server side code for storing my blog posts. In the same vain, I chose to use EmailJS so I wouldn't have to work with any server side code or SMTP to send emails. I also wanted my CSS styling to be compatible with the most browsers possible, which led me to using Flexbox. Flexbox supports 95% of all modern web browsers. CSS Modules were also used so I could style each component individually, and SASS made organizing my CSS much easier. Typescript makes using React a much more pleasurable experience because forces static typing in your application. Static typing comes at a cost, though it is well worth it because Javascript lacks meaningful error messages. This is all deployed to heroku, which makes efficient use of dinos which are perfect for small applications.
 
-### `npm start`
+## TODOs
+Light theme / Dark theme toggle so my viewers don't burn their eyes at night
+    Theme should be persisted in local storage
+404 Page
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for detailss
