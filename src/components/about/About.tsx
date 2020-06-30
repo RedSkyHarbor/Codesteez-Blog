@@ -15,12 +15,6 @@ const About = () => {
                     screenName={'codingsteez'}
                     placeholder={<ReactLoading type='bars' color='orange'/>}
                 />
-                <TwitterTimelineEmbed
-                    sourceType="profile"
-                    screenName="codingsteez"
-                    options={{height: 400}}
-                    placeholder={<ReactLoading type='bars' color='orange' />}
-                />
             </div>
     )
 }
