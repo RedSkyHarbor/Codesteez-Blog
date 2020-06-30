@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './About.module.scss'
 
 // @ts-ignore
-import { TwitterFollowButton, TwitterTimelineEmbed } from 'react-twitter-embed'
+import { TwitterFollowButton } from 'react-twitter-embed'
 import  ReactLoading from 'react-loading'
 
 const About = () => {
