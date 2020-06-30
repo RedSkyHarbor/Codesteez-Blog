@@ -1,0 +1,15 @@
+.sticky {
+    position: sticky;
+    position: -webkit-sticky;
+}
+
+.scrollbar {
+    text-align:center;
+    font-size: small;
+    position: fixed;
+    top: 0;
+    background: orange;
+    width: 100%;
+    height: 5px;
+    z-index: 3;
+}

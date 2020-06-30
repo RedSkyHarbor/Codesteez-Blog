@@ -3,17 +3,50 @@ import butter from '../../butter-client'
 import { Helmet } from 'react-helmet'
 import styles from './Post.module.scss'
 
+import ProgressBar from '../scroll/ProgressBar'
+
 interface IProps {
     post: string;
 }
 
 interface IState {
     data: any;
+    scrollPosition: Number;
 }
 
 class Post extends Component<IProps, IState> {
     state: IState = {
         data: {},
+        scrollPosition: 0
+    }
+
+    listenToScrollEvent = () => {
+        document.addEventListener("scroll", () => {
+          requestAnimationFrame(() => {
+            this.calculateScrollDistance();
+          });
+        });
+    }
+    
+    calculateScrollDistance = () => {
+        const scrollTop = window.pageYOffset; // how much the user has scrolled by
+        const winHeight = window.innerHeight;
+        const docHeight = this.getDocHeight();
+
+        const totalDocScrollLength = docHeight - winHeight;
+        const scrollPosition = Math.floor(scrollTop / totalDocScrollLength * 100);
+
+        this.setState({ 
+            scrollPosition: scrollPosition,
+        });
+    }
+    
+    getDocHeight = () => {
+        return Math.max(
+            document.body.scrollHeight, document.documentElement.scrollHeight,
+            document.body.offsetHeight, document.documentElement.offsetHeight,
+            document.body.clientHeight, document.documentElement.clientHeight
+        );
     }
 
     dateFormat = (date: string) => {
@@ -25,6 +58,7 @@ class Post extends Component<IProps, IState> {
     async componentDidMount() {
         const resp = await butter.post.retrieve(this.props.post)
         this.setState(resp.data)
+        this.listenToScrollEvent()
     }
 
     render() {
@@ -36,6 +70,7 @@ class Post extends Component<IProps, IState> {
                     <meta name='description' content={post.meta_description} />
                     <meta name='og:image' content={post.featured_image} />
                 </Helmet>
+                <ProgressBar scroll={ this.state.scrollPosition + '%'} />
                 <div className={styles.container}>
                     <p className={styles.published}>Published on {this.dateFormat(String(post.published))}</p>
                     <h1>{post.title}</h1>
