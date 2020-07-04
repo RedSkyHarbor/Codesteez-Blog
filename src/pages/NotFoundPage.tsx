@@ -2,18 +2,18 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 
 import Header from '../components/header/Header'
-import PostList from '../components/blog/PostList'
+import NotFound from '../components/404/NotFound'
 import Footer from '../components/footer/Footer'
 
-const HomePage = () => {
+const NotFoundPage = () => {
     return (
         <div>
-            <Helmet><title>Blog | Code Steez</title></Helmet>
+            <Helmet><title>404 | Code Steez</title></Helmet>
             <Header />
-            <PostList />
+            <NotFound />
             <Footer />
         </div>
     )
 }
 
-export default HomePage
+export default NotFoundPage

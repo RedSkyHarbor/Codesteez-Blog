@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: local('PlayfairDisplay'), url(../../fonts/Playfair_Display/PlayfairDisplay.ttf) format('truetype');
+}
+
+.not_found {
+    min-height: calc(100vh - 3vh); /* Creates a sticky footer, subtract margin buttom from header */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: PlayfairDisplay;
+}
+
+.oops {
+    font-size: 20vw;
+}

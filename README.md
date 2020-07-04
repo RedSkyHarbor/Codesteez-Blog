@@ -27,7 +27,7 @@ Light theme / Dark theme toggle so my viewers don't burn their eyes at night
 
 Theme should be persisted in local storage
 
-404 Page
+~~404 Page~~ completed 07/04/2020
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for detailss
