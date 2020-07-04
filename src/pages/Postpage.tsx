@@ -7,7 +7,7 @@ import Footer from '../components/footer/Footer'
 
 type TParams = { slug : string };
 
-const Postpage = ({ match }: RouteComponentProps<TParams> ) => {
+const PostPage = ({ match }: RouteComponentProps<TParams> ) => {
     return (
         <div>
             <Header />
@@ -17,4 +17,4 @@ const Postpage = ({ match }: RouteComponentProps<TParams> ) => {
     )
 }
 
-export default Postpage
+export default PostPage

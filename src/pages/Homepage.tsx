@@ -5,7 +5,7 @@ import Header from '../components/header/Header'
 import PostList from '../components/blog/PostList'
 import Footer from '../components/footer/Footer'
 
-const Homepage = () => {
+const HomePage = () => {
     return (
         <div>
             <Helmet><title>Blog | Code Steez</title></Helmet>
@@ -16,4 +16,4 @@ const Homepage = () => {
     )
 }
 
-export default Homepage
+export default HomePage
