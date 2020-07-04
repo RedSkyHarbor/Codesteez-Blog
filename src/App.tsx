@@ -4,10 +4,10 @@ import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom'
 import './App.scss';
 import './fonts/Playfair_Display/PlayfairDisplay.ttf'
 
-import HomePage from './pages/HomePage'
-import PostPage from './pages/PostPage'
-import ContactPage from './pages/ContactPage'
-import AboutPage from './pages/AboutPage'
+import HomePage from './pages/Homepage'
+import PostPage from './pages/Postpage'
+import ContactPage from './pages/Contactpage'
+import AboutPage from './pages/Aboutpage'
 import NotFoundPage from './pages/NotFoundPage'
 
 function App() {
